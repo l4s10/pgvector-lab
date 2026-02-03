@@ -48,8 +48,11 @@ Desde la raíz del proyecto:
 docker compose up -d
 ```
 
-Esto levanta: - PostgreSQL 16 - Base de datos `vectordb` - Extensión
-`pgvector` habilitada - Datos de ejemplo precargados
+Esto levanta:
+-   PostgreSQL 16
+-   Base de datos `vectordb`
+-   Extensión `pgvector` habilitada
+-   Datos de ejemplo precargados
 
 ------------------------------------------------------------------------
 
