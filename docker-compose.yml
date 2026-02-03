@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: pgvector_lab
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: vectordb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d
+
+volumes:
+  pgdata:
