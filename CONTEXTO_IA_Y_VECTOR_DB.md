@@ -12,8 +12,11 @@ El objetivo es entregar **contexto arquitectónico**, no implementación.
 
 Una IA **no se conecta directamente** a la base de datos.
 
-Siempre existe una **aplicación intermedia** que: - genera embeddings -
-consulta la base vectorial - entrega contexto a la IA
+Siempre existe una **aplicación intermedia** que:
+
+-   Genera embeddings
+-   Consulta la base vectorial
+-   Entrega contexto a la IA
 
 ------------------------------------------------------------------------
 
@@ -37,7 +40,9 @@ consulta la base vectorial - entrega contexto a la IA
 
 ### 3.1 Pregunta del usuario
 
-Ejemplo: \> ¿Qué animales domésticos existen?
+Ejemplo:
+
+> ¿Qué animales domésticos existen?
 
 ------------------------------------------------------------------------
 
@@ -64,8 +69,10 @@ LIMIT 5;
 
 ### 3.4 Construcción de contexto (RAG)
 
-La aplicación envía a la IA: - la pregunta original - los resultados
-recuperados
+La aplicación envía a la IA:
+
+-   La pregunta original
+-   Los resultados recuperados
 
 ------------------------------------------------------------------------
 
@@ -91,8 +98,10 @@ recuperados
 
 ## 5. Relación con este laboratorio
 
-Este laboratorio cubre: - almacenamiento vectorial - búsqueda por
-similitud
+Este laboratorio cubre:
+
+-   Almacenamiento vectorial
+-   Búsqueda por similitud
 
 La integración con IA no está implementada, ya que, este laboratorio se centra en la interacción con la base de datos vectorial.
 

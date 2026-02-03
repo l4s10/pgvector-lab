@@ -49,6 +49,7 @@ docker compose up -d
 ```
 
 Esto levanta:
+
 -   PostgreSQL 16
 -   Base de datos `vectordb`
 -   Extensión `pgvector` habilitada
@@ -79,9 +80,11 @@ extraídas de datos como textos, imágenes o sonidos.
 
 ### 5.2 ¿Qué es pgvector?
 
-`pgvector` es una extensión que permite: - Almacenar vectores en
-PostgreSQL - Calcular distancias entre ellos - Ordenar resultados por
-similitud
+`pgvector` es una extensión que permite:
+
+-   Almacenar vectores en PostgreSQL
+-   Calcular distancias entre ellos
+-   Ordenar resultados por similitud
 
 PostgreSQL sigue siendo una base de datos relacional; pgvector
 **complementa**, no reemplaza, este modelo.
@@ -97,9 +100,11 @@ ORDER BY embedding <-> '[0.15, 0.2, 0.25]'
 LIMIT 1;
 ```
 
-**¿Qué ocurre?** - `<->` calcula la distancia entre vectores -
-PostgreSQL ordena los resultados desde el más cercano - El resultado
-representa el vector más similar al vector de búsqueda
+**¿Qué ocurre?**
+
+-   `<->` calcula la distancia entre vectores
+-   PostgreSQL ordena los resultados desde el más cercano
+-   El resultado representa el vector más similar al vector de búsqueda
 
 ------------------------------------------------------------------------
 
@@ -126,9 +131,11 @@ Modificar la tabla para usar más dimensiones y analizar implicancias.
 
 ## 8. Relación con IA (contexto)
 
-En sistemas reales: - Los vectores suelen generarse con modelos de
-embeddings - La base de datos **no genera inteligencia** - Su rol es
-almacenar y recuperar información por similitud
+En sistemas reales:
+
+-   Los vectores suelen generarse con modelos de embeddings
+-   La base de datos **no genera inteligencia**
+-   Su rol es almacenar y recuperar información por similitud
 
 Este laboratorio se enfoca únicamente en la capa de persistencia.
 
@@ -144,7 +151,10 @@ Este laboratorio se enfoca únicamente en la capa de persistencia.
 
 ## 10. Notas finales
 
-Este entorno está pensado como: - Material de aprendizaje - Base para
-pruebas técnicas - Punto de partida para soluciones productivas para una bench de bases de datos vectoriales.
+Este entorno está pensado como:
+
+-   Material de aprendizaje
+-   Base para pruebas técnicas
+-   Punto de partida para soluciones productivas para una bench de bases de datos vectoriales
 
 Francisco Muñoz - 2026.
